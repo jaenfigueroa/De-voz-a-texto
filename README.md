@@ -1,7 +1,7 @@
 ### Preview
 
 <div >
-  <img src="./assets/preview.jpg" align="center" style="width: 30%" />
+  <img src="./assets/preview.jpg" align="center" style="width: 40%" />
 </div>
 
 ### Website
