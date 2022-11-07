@@ -39,6 +39,7 @@ selectorIdiomas.addEventListener('change', (evento) => {
   console.log('se cambio de idioma');
 
   apagar()
+
   activadorMicrofono.checked = false
 
   if (selectorIdiomas.value === 'Español') {
