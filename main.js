@@ -9,7 +9,8 @@ botonApagar.addEventListener('click', apagar)
 ///////////////////////////////////////////////////////
 const foxed = new webkitSpeechRecognition();
 
-foxed.lang = "es-ES";
+// foxed.lang = "es-ES";
+foxed.lang = "en";
 foxed.continuous = true;
 
 foxed.onresult = (evento) => {
