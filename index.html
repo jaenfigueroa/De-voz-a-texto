@@ -17,18 +17,24 @@
 
   <body>
     <main class="main">
+      <!-- estado de funcionamiento -->
       <div class="main__estado" id="microfono">
         <i class="fa-solid fa-microphone"></i>
       </div>
+
+      <!-- selecctor de idiomas -->
+      <div class="main__selector-idiomas">
+        <p>Usar idioma:</p>
+        <select id="selectorIdiomas">
+          <option value="Español">Español</option>
+          <option value="Ingles">Ingles</option>
+        </select>
+      </div>
+
+      <!-- aplicacion -->
       <p class="main__resultado" id="resultado">Resultado</p>
-      <button class="main__boton" id="boton-escuchar">
-        <!-- <div class="boton__fondo"></div> -->
-        <p class="boton__valor">Encender</p>
-      </button>
-      <button class="main__boton" id="boton-apagar">
-        <!-- <div class="boton__fondo"></div> -->
-        <p class="boton__valor">Apagar</p>
-      </button>
+      <button class="main__boton" id="boton-escuchar">Encender</button>
+      <button class="main__boton" id="boton-apagar">Apagar</button>
     </main>
   </body>
 </html>

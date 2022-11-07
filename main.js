@@ -9,8 +9,7 @@ botonApagar.addEventListener('click', apagar)
 ///////////////////////////////////////////////////////
 const foxed = new webkitSpeechRecognition();
 
-// foxed.lang = "es-ES";
-foxed.lang = "en";
+foxed.lang = "es-ES";
 foxed.continuous = true;
 
 foxed.onresult = (evento) => {
@@ -39,7 +38,22 @@ function apagar() {
 
   microfono.classList.remove('main__estado--activo')
 
-  // contenedorResultado.innerHTML = 'Resultado';
-
   foxed.stop();
 }
+
+/////////////////////////
+const selectorIdiomas = document.getElementById('selectorIdiomas')
+
+selectorIdiomas.addEventListener('change', (evento) => {
+  console.log('se cambio de idioma');
+
+  apagar()
+
+  if (selectorIdiomas.value === 'Español') {
+    foxed.lang = "es-ES";
+  } else {
+    foxed.lang = "en";
+  }
+
+  foxed.continuous = true;
+})

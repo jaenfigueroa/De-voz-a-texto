@@ -55,10 +55,28 @@ ol {
 }
 
 /* /////////////////////////////////////////////////////// */
+.main__selector-idiomas {
+  display: flex;
+  gap: 1rem;
+  /* background-color: rgb(162, 144, 238); */
+}
+.main__selector-idiomas p {
+  font-size: 2rem;
+  /* background-color: antiquewhite; */
+  border: 1px solid transparent;
+}
+#selectorIdiomas {
+  /* background-color: rgb(174, 255, 228); */
+  font-size: 2rem;
+}
+#selectorIdiomas option {
+  font-size: 2rem;
+}
+/* /////////////////////////////////////////////////////// */
 .main__resultado {
   background-color: #ddd;
   color: black;
-  font-size: 3.5rem;
+  font-size: 3rem;
   padding: 2rem;
   width: 90%;
   height: 55%;
@@ -73,15 +91,9 @@ ol {
   padding: 0.7rem 1.5rem;
   position: relative;
   overflow: hidden;
+  font-size: 2rem;
 }
-/* .main__boton:hover .boton__fondo {
-  animation: derecha 0.3s linear both;
-} */
 
-.boton__valor {
-  font-size: 3.2rem;
-  position: relative;
-}
 .boton__fondo {
   content: '';
   position: absolute;
