@@ -38,5 +38,7 @@ function apagar() {
 
   microfono.classList.remove('main__estado--activo')
 
+  // contenedorResultado.innerHTML = 'Resultado';
+
   foxed.stop();
 }
