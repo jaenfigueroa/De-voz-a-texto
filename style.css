@@ -20,21 +20,52 @@ ol {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  gap: 4rem;
+  gap: 3rem;
 }
 
+.main__estado {
+  background-color: white;
+  color: #ff4443;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  box-shadow: 0 0 0 0px #dadada;
+  margin-bottom: 1rem;
+  box-shadow: 0 1.5px 5px 0px rgba(0, 0, 0, 0.205);
+}
+
+.main__estado--activo {
+  background-color: #ff4443;
+  color: white;
+  box-shadow: 0 1.5px 5px 0px rgba(0, 0, 0, 0);
+  animation: escuchar 0.5s linear infinite alternate-reverse;
+}
+.main__estado .fa-solid {
+  font-size: 3rem;
+}
+
+@keyframes escuchar {
+  to {
+    box-shadow: 0 0 0 40px #dadada;
+  }
+}
+
+/* /////////////////////////////////////////////////////// */
 .main__resultado {
   background-color: #ddd;
   color: black;
-  font-size: 3.7rem;
+  font-size: 3.5rem;
   padding: 2rem;
   width: 90%;
-  height: 70%;
+  height: 60%;
   border-radius: 0.5rem;
 }
 
 .main__boton {
-  background-color: rgba(40, 37, 208, 0.849);
+  background-color: rgba(40, 37, 208, 0.85);
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -46,7 +77,7 @@ ol {
   animation: derecha 0.3s linear both;
 }
 .boton__valor {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   position: relative;
 }
 .boton__fondo {
@@ -59,6 +90,11 @@ ol {
   left: 0;
   transform: translateX(-100%);
   clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+}
+
+#boton-apagar {
+  display: none;
+  background-color: rgb(220, 20, 60);
 }
 
 /*/////////////////////////////////////////////////*/

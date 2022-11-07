@@ -9,14 +9,25 @@
     <link rel="stylesheet" href="style.css" />
     <!-- js -->
     <script src="main.js" defer></script>
+    <!-- awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   </head>
 
   <body>
     <main class="main">
+      <div class="main__estado" id="microfono">
+        <i class="fa-solid fa-microphone"></i>
+      </div>
       <p class="main__resultado" id="resultado">Resultado</p>
-      <button class="main__boton" id="boton">
+      <button class="main__boton" id="boton-escuchar">
         <div class="boton__fondo"></div>
-        <p class="boton__valor">Escuchar</p>
+        <p class="boton__valor">Encender</p>
+      </button>
+      <button class="main__boton" id="boton-apagar">
+        <div class="boton__fondo"></div>
+        <p class="boton__valor">Apagar</p>
       </button>
     </main>
   </body>
