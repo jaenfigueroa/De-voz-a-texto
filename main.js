@@ -3,9 +3,6 @@ const contenedorResultado = document.querySelector('#resultado')
 const botonEscuchar = document.getElementById('boton-escuchar')
 const botonApagar = document.getElementById('boton-apagar')
 
-botonEscuchar.addEventListener('click', escuchar)
-botonApagar.addEventListener('click', apagar)
-
 ///////////////////////////////////////////////////////
 const foxed = new webkitSpeechRecognition();
 
@@ -22,9 +19,6 @@ foxed.onresult = (evento) => {
 function escuchar() {
   console.log('se empezo a escuchar');
 
-  botonEscuchar.style.display = 'none'
-  botonApagar.style.display = 'inline'
-
   microfono.classList.add('main__estado--activo')
 
   foxed.start();
@@ -32,9 +26,6 @@ function escuchar() {
 
 function apagar() {
   console.log('se dejo de escuchar');
-
-  botonEscuchar.style.display = 'inline'
-  botonApagar.style.display = 'none'
 
   microfono.classList.remove('main__estado--activo')
 
@@ -48,6 +39,7 @@ selectorIdiomas.addEventListener('change', (evento) => {
   console.log('se cambio de idioma');
 
   apagar()
+  activadorMicrofono.checked = false
 
   if (selectorIdiomas.value === 'Español') {
     foxed.lang = "es-ES";
@@ -56,4 +48,17 @@ selectorIdiomas.addEventListener('change', (evento) => {
   }
 
   foxed.continuous = true;
+})
+
+//////////////////////////////////////////
+const activadorMicrofono = document.querySelector('#activadorMicrofono')
+
+activadorMicrofono.addEventListener('change', (evento) => {
+  console.log(activadorMicrofono.checked);
+
+  if (activadorMicrofono.checked) {
+    escuchar()
+  } else {
+    apagar()
+  }
 })

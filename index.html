@@ -17,11 +17,6 @@
 
   <body>
     <main class="main">
-      <!-- estado de funcionamiento -->
-      <div class="main__estado" id="microfono">
-        <i class="fa-solid fa-microphone"></i>
-      </div>
-
       <!-- selecctor de idiomas -->
       <div class="main__selector-idiomas">
         <p>Usar idioma:</p>
@@ -33,8 +28,28 @@
 
       <!-- aplicacion -->
       <p class="main__resultado" id="resultado">Resultado</p>
-      <button class="main__boton" id="boton-escuchar">Encender</button>
-      <button class="main__boton" id="boton-apagar">Apagar</button>
+
+      <!-- estado de funcionamiento -->
+      <!-- <div class="main__estado" id="microfono">
+        <i class="fa-solid fa-microphone"></i>
+      </div> -->
+
+      <!-- <button class="main__boton" id="boton-escuchar">Encender</button>
+      <button class="main__boton" id="boton-apagar">Apagar</button> -->
+
+      <!-- NUEVO MICROFONO -->
+      <div class="contenedorMicrofono">
+        <label for="activadorMicrofono">
+          <div class="main__estado" id="microfono">
+            <i class="fa-solid fa-microphone"></i>
+          </div>
+          <input type="checkbox" name="microfono" id="activadorMicrofono" />
+        </label>
+      </div>
+
+      <!-- antiguos botones -->
+      <!-- <button class="main__boton" id="boton-escuchar">Encender</button>
+      <button class="main__boton" id="boton-apagar">Apagar</button> -->
     </main>
   </body>
 </html>

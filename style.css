@@ -117,3 +117,11 @@ ol {
     transform: translateX(0%);
   }
 }
+
+.contenedorMicrofono {
+  /* background-color: rgb(168, 255, 171); */
+}
+
+#activadorMicrofono {
+  display: none;
+}
