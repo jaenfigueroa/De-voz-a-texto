@@ -47,7 +47,7 @@ selectorIdiomas.addEventListener('change', () => {
   foxed.continuous = true;
 })
 
-//////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
 checkbox.addEventListener('change', () => {
   // console.log('se activo/desactivo el microfono, valor: ', checkbox.checked);
 
