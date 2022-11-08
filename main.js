@@ -18,14 +18,14 @@ foxed.onresult = (evento) => {
 function escuchar() {
   // console.log('se empezo a escuchar');
 
-  microfono.classList.add('microfono-activo')
+  microfono.classList.add('microfono__contenedor--activo')
   foxed.start();
 }
 
 function apagar() {
   // console.log('se dejo de escuchar');
 
-  microfono.classList.remove('microfono-activo')
+  microfono.classList.remove('microfono__contenedor--activo')
   foxed.stop();
 }
 

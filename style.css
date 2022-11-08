@@ -68,7 +68,7 @@ ol {
   box-shadow: 0 1.5px 5px 0px rgba(0, 0, 0, 0.205);
 }
 
-.microfono-activo {
+.microfono__contenedor--activo {
   background-color: #ff4443;
   color: white;
   box-shadow: 0 1.5px 5px 0px rgba(0, 0, 0, 0);
