@@ -22,7 +22,7 @@ function escuchar() {
   foxed.start();
 }
 
-function apagar() {
+function dejarDeEscuchar() {
   // console.log('se dejo de escuchar');
 
   microfono.classList.remove('microfono__contenedor--activo')
@@ -35,7 +35,7 @@ const selectorIdiomas = document.getElementById('selectorIdiomas')
 selectorIdiomas.addEventListener('change', () => {
   // console.log('se cambio de idioma');
 
-  apagar()
+  dejarDeEscuchar()
   checkbox.checked = false
 
   if (selectorIdiomas.value === 'Español') {
@@ -48,13 +48,12 @@ selectorIdiomas.addEventListener('change', () => {
 })
 
 //////////////////////////////////////////
-
 checkbox.addEventListener('change', () => {
   // console.log('se activo/desactivo el microfono, valor: ', checkbox.checked);
 
   if (checkbox.checked) {
     escuchar()
   } else {
-    apagar()
+    dejarDeEscuchar()
   }
 })
