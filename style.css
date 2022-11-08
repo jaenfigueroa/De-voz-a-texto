@@ -23,7 +23,7 @@ ol {
   /* background-color: #ff8484; */
 }
 
-/* /////////////////////////////////////////////////////// */
+/* SELECCTOR DE IDIOMAS//////////////////////////////////////*/
 .main__selector-idiomas {
   /* background-color: rgb(162, 144, 238); */
   display: flex;
@@ -36,7 +36,7 @@ ol {
   font-size: 2rem;
 }
 
-/* /////////////////////////////////////////////////////// */
+/* RESULTADO////////////////////////////////////////////////*/
 .main__resultado {
   background-color: #ddd;
   /* background-color: aquamarine; */
@@ -48,7 +48,7 @@ ol {
   border-radius: 0.5rem;
 }
 
-/*/////////////////////////////////////////////////*/
+/*MICROFONO/////////////////////////////////////////////////*/
 .main__microfono {
   /* background-color: violet; */
   margin: 2rem;
