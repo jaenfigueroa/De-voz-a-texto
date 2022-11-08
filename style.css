@@ -30,7 +30,7 @@ ol {
   gap: 1rem;
 }
 
-.main__selector-idiomas p,
+.main__selector-idiomas span,
 #selectorIdiomas,
 #selectorIdiomas option {
   font-size: 2rem;
@@ -49,7 +49,6 @@ ol {
 }
 
 /*/////////////////////////////////////////////////*/
-
 .main__microfono {
   /* background-color: violet; */
   margin: 2rem;
