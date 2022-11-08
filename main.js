@@ -1,46 +1,42 @@
+const resultado = document.getElementById('resultado')
 const microfono = document.getElementById('microfono')
-const contenedorResultado = document.querySelector('#resultado')
-const botonEscuchar = document.getElementById('boton-escuchar')
-const botonApagar = document.getElementById('boton-apagar')
+const checkbox = document.getElementById('checkbox')
 
-///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
 const foxed = new webkitSpeechRecognition();
 
 foxed.lang = "es-ES";
 foxed.continuous = true;
 
 foxed.onresult = (evento) => {
-  for (const result of evento.results) {
-    contenedorResultado.innerHTML = result[0].transcript;
+  for (const texto of evento.results) {
+    resultado.innerHTML = texto[0].transcript;
   }
 };
 
-///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
 function escuchar() {
-  console.log('se empezo a escuchar');
+  // console.log('se empezo a escuchar');
 
-  microfono.classList.add('main__estado--activo')
-
+  microfono.classList.add('microfono-activo')
   foxed.start();
 }
 
 function apagar() {
-  console.log('se dejo de escuchar');
+  // console.log('se dejo de escuchar');
 
-  microfono.classList.remove('main__estado--activo')
-
+  microfono.classList.remove('microfono-activo')
   foxed.stop();
 }
 
-/////////////////////////
+///////////////////////////////////////////////////////////////////////////
 const selectorIdiomas = document.getElementById('selectorIdiomas')
 
-selectorIdiomas.addEventListener('change', (evento) => {
-  console.log('se cambio de idioma');
+selectorIdiomas.addEventListener('change', () => {
+  // console.log('se cambio de idioma');
 
   apagar()
-
-  activadorMicrofono.checked = false
+  checkbox.checked = false
 
   if (selectorIdiomas.value === 'Español') {
     foxed.lang = "es-ES";
@@ -52,12 +48,11 @@ selectorIdiomas.addEventListener('change', (evento) => {
 })
 
 //////////////////////////////////////////
-const activadorMicrofono = document.querySelector('#activadorMicrofono')
 
-activadorMicrofono.addEventListener('change', (evento) => {
-  console.log(activadorMicrofono.checked);
+checkbox.addEventListener('change', () => {
+  // console.log('se activo/desactivo el microfono, valor: ', checkbox.checked);
 
-  if (activadorMicrofono.checked) {
+  if (checkbox.checked) {
     escuchar()
   } else {
     apagar()

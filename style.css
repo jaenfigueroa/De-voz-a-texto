@@ -20,11 +20,42 @@ ol {
   align-items: center;
   justify-content: space-evenly;
   height: 100vh;
-  gap: 2rem;
-  padding: 1rem;
+  /* background-color: #ff8484; */
 }
 
-.main__estado {
+/* /////////////////////////////////////////////////////// */
+.main__selector-idiomas {
+  /* background-color: rgb(162, 144, 238); */
+  display: flex;
+  gap: 1rem;
+}
+
+.main__selector-idiomas p,
+#selectorIdiomas,
+#selectorIdiomas option {
+  font-size: 2rem;
+}
+
+/* /////////////////////////////////////////////////////// */
+.main__resultado {
+  background-color: #ddd;
+  /* background-color: aquamarine; */
+  color: black;
+  font-size: 3rem;
+  padding: 2rem;
+  width: 90%;
+  height: 55%;
+  border-radius: 0.5rem;
+}
+
+/*/////////////////////////////////////////////////*/
+
+.main__microfono {
+  /* background-color: violet; */
+  margin: 2rem;
+}
+
+.microfono__contenedor {
   background-color: white;
   color: #ff4443;
   width: 8rem;
@@ -34,94 +65,26 @@ ol {
   justify-content: center;
   border-radius: 100%;
   box-shadow: 0 0 0 0px #dadada;
-  margin: 3rem;
   box-shadow: 0 1.5px 5px 0px rgba(0, 0, 0, 0.205);
 }
 
-.main__estado--activo {
+.microfono-activo {
   background-color: #ff4443;
   color: white;
   box-shadow: 0 1.5px 5px 0px rgba(0, 0, 0, 0);
   animation: escuchar 0.5s linear infinite alternate-reverse;
 }
-.main__estado .fa-solid {
+
+.microfono__icono {
   font-size: 3rem;
+}
+
+.microfono__checkbox {
+  display: none;
 }
 
 @keyframes escuchar {
   to {
     box-shadow: 0 0 0 40px #dadada;
   }
-}
-
-/* /////////////////////////////////////////////////////// */
-.main__selector-idiomas {
-  display: flex;
-  gap: 1rem;
-  /* background-color: rgb(162, 144, 238); */
-}
-.main__selector-idiomas p {
-  font-size: 2rem;
-  /* background-color: antiquewhite; */
-  border: 1px solid transparent;
-}
-#selectorIdiomas {
-  /* background-color: rgb(174, 255, 228); */
-  font-size: 2rem;
-}
-#selectorIdiomas option {
-  font-size: 2rem;
-}
-/* /////////////////////////////////////////////////////// */
-.main__resultado {
-  background-color: #ddd;
-  color: black;
-  font-size: 3rem;
-  padding: 2rem;
-  width: 90%;
-  height: 55%;
-  border-radius: 0.5rem;
-}
-
-.main__boton {
-  background-color: rgba(40, 37, 208, 0.85);
-  color: white;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 0.7rem 1.5rem;
-  position: relative;
-  overflow: hidden;
-  font-size: 2rem;
-}
-
-.boton__fondo {
-  content: '';
-  position: absolute;
-  width: 125%;
-  height: 100%;
-  background-color: rgb(220, 20, 60);
-  top: 0;
-  left: 0;
-  transform: translateX(-100%);
-  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
-}
-
-#boton-apagar {
-  display: none;
-  background-color: rgb(220, 20, 60);
-}
-
-/*/////////////////////////////////////////////////*/
-@keyframes derecha {
-  to {
-    transform: translateX(0%);
-  }
-}
-
-.contenedorMicrofono {
-  /* background-color: rgb(168, 255, 171); */
-}
-
-#activadorMicrofono {
-  display: none;
 }

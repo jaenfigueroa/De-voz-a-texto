@@ -17,27 +17,27 @@
 
   <body>
     <main class="main">
-      <!-- selecctor de idiomas -->
-      <div class="main__selector-idiomas">
+      <!-- SELECCTOR DE IDIOMAS -->
+      <section class="main__selector-idiomas">
         <p>Detectar idioma:</p>
         <select id="selectorIdiomas">
           <option value="Español">Español</option>
           <option value="Ingles">Ingles</option>
         </select>
-      </div>
+      </section>
 
-      <!-- aplicacion -->
-      <p class="main__resultado" id="resultado">Resultado</p>
+      <!-- RESULTADO -->
+      <section class="main__resultado" id="resultado">Resultado</section>
 
-      <!-- NUEVO MICROFONO -->
-      <div class="contenedorMicrofono">
-        <label for="activadorMicrofono">
-          <div class="main__estado" id="microfono">
-            <i class="fa-solid fa-microphone"></i>
+      <!-- MICROFONO -->
+      <section class="main__microfono">
+        <label for="checkbox">
+          <div class="microfono__contenedor" id="microfono">
+            <i class="microfono__icono fa-solid fa-microphone"></i>
           </div>
-          <input type="checkbox" name="microfono" id="activadorMicrofono" />
+          <input class="microfono__checkbox" type="checkbox" id="checkbox" />
         </label>
-      </div>
+      </section>
     </main>
   </body>
 </html>
