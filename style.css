@@ -20,12 +20,10 @@ ol {
   align-items: center;
   justify-content: space-evenly;
   height: 100vh;
-  /* background-color: #ff8484; */
 }
 
 /* SELECCTOR DE IDIOMAS//////////////////////////////////////*/
 .main__selector-idiomas {
-  /* background-color: rgb(162, 144, 238); */
   display: flex;
   gap: 1rem;
 }
@@ -39,7 +37,6 @@ ol {
 /* RESULTADO////////////////////////////////////////////////*/
 .main__resultado {
   background-color: #ddd;
-  /* background-color: aquamarine; */
   color: black;
   font-size: 3rem;
   padding: 2rem;
@@ -50,18 +47,17 @@ ol {
 
 /*MICROFONO/////////////////////////////////////////////////*/
 .main__microfono {
-  /* background-color: violet; */
   margin: 2rem;
 }
 
 .microfono__contenedor {
   background-color: white;
   color: #ff4443;
-  width: 8rem;
-  height: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 8rem;
+  height: 8rem;
   border-radius: 100%;
   box-shadow: 0 0 0 0px #dadada;
   box-shadow: 0 1.5px 5px 0px rgba(0, 0, 0, 0.205);
